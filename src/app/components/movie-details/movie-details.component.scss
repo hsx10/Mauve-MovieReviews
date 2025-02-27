@@ -4,3 +4,54 @@
     color: white;
     padding: 0.5rem;
 }
+
+.movie-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(17, 17, 71);
+    color: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 1.5rem;
+}
+
+.movie-card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie-card-body img {
+    height: 30rem;
+    width: 20rem;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+}
+
+.rating {
+    background-color: green;
+    padding: 0.3rem 0.5rem;
+    border-radius: 50%;
+}
+
+.btn-back {
+    padding: 0.8rem 2rem;
+    border: none;
+    background-color: rgb(17, 17, 71);
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btn-back:hover {
+    opacity: 90%;
+}

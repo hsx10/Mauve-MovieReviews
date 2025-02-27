@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ServiceContactAPIService } from '../../tools/services/service-contact-api.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Movie } from '../../models/movie.model';
 
 @Component({
@@ -14,7 +14,8 @@ export class MovieDetailsComponent {
   idMovie!: number;
   movie!: Movie;
   messageError: string = "";
-  constructor(private _serviceContactApi: ServiceContactAPIService, private _activatedRoute: ActivatedRoute) {
+  constructor(private _serviceContactApi: ServiceContactAPIService, private _activatedRoute: ActivatedRoute, private _router: Router) {
+    //Récupération de l'id passé en paramètre de la route
     this.idMovie = _activatedRoute.snapshot.params["id"];
   }
 
@@ -34,5 +35,10 @@ export class MovieDetailsComponent {
 
     }
 
+  }
+
+  goBackToMovies() {
+    //Retourne à la page movies
+    this._router.navigate(["movies"]);
   }
 }

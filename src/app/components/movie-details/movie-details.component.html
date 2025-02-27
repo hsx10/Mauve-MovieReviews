@@ -10,14 +10,15 @@
             <div class="movie-card-body">
                 <img [src]="movie.poster" [alt]="movie.title">
                 <p>{{movie.summary}}</p>
-                <p>{{movie.ratingIMDB}}</p>
-                <p>{{movie.releaseYear}}</p>
-                <p>{{movie.trailer}}</p>
-                <p>{{movie.lengthInMinutes}}</p>
-                <p>{{movie.country}}</p>
+                <p>IMDB : <span class="rating">{{movie.ratingIMDB}}</span></p>
+                <p> Année de sortie : {{movie.releaseYear}}</p>
+                <p><a [href]="movie.trailer">Regarder le trailer</a></p>
+                <p>Durée : {{movie.lengthInMinutes}} minutes</p>
+                <p>Pays : {{movie.country}}</p>
 
             </div>
         </div>
+        <button class="btn-back" (click)="goBackToMovies()">Retour</button>
     </div>
 }
 

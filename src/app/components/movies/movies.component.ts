@@ -35,8 +35,7 @@ export class MoviesComponent {
 
   goToMovieDetails(idMovie: number): void {
     if (idMovie) {
-      //Envoyer l'utilisateur sur la page de détails du film
-      console.log(idMovie);
+      //Envoyer l'utilisateur sur la page de détails du film en passant l'id
       this._router.navigate(["movie-details", idMovie]);
     }
   }
