@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { LoginComponent } from './components/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MoviesComponent } from './components/movies/movies.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     NavBarComponent,
     LoginComponent,
+    MoviesComponent,
 
   ],
   imports: [

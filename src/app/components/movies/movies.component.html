@@ -1,0 +1,12 @@
+<h1>Movies</h1>
+
+<div class="movies-container">
+    @for(movie of movies; track $index){
+        <button class="btn-movie" (click)="goToMovieDetails(movie.IdMovie)">
+            <div class="movie-container">
+                <img [src]="movie.Poster" [alt]="movie.Title">
+                <p>{{movie.Title}}</p>
+            </div>
+        </button>
+    }
+</div>
