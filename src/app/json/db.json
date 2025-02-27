@@ -1,150 +1,150 @@
 {
     "movies": [
         {
-            "IdMovie": 1,
-            "Title": "Inception",
-            "Poster": "https://m.media-amazon.com/images/M/MV5BNDZkNjdmNDAtMTJjNS00OTA3LWIwM2UtMzNhOGFlYTM0NGU4XkEyXkFqcGc@._V1_.jpg",
-            "Summary": "Un voleur qui manipule les rêves est chargé d'implanter une idée dans l'esprit d'un PDG.",
-            "RatingIMDB": 8.8,
-            "ReleaseYear": 2010,
-            "Trailer": "https://www.youtube.com/watch?v=YoHD9XEInc0",
-            "LengthInMinutes": 148,
-            "Country": "USA"
+            "id": 1,
+            "title": "Inception",
+            "poster": "https://m.media-amazon.com/images/M/MV5BNDZkNjdmNDAtMTJjNS00OTA3LWIwM2UtMzNhOGFlYTM0NGU4XkEyXkFqcGc@._V1_.jpg",
+            "summary": "Un voleur qui manipule les rêves est chargé d'implanter une idée dans l'esprit d'un PDG.",
+            "ratingIMDB": 8.8,
+            "releaseYear": 2010,
+            "trailer": "https://www.youtube.com/watch?v=YoHD9XEInc0",
+            "lengthInMinutes": 148,
+            "country": "USA"
         },
         {
-            "IdMovie": 2,
-            "Title": "The Dark Knight",
-            "Poster": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
-            "Summary": "Batman affronte le Joker, un criminel anarchiste qui sème le chaos dans Gotham.",
-            "RatingIMDB": 9.0,
-            "ReleaseYear": 2008,
-            "Trailer": "https://www.youtube.com/watch?v=EXeTwQWrcwY",
-            "LengthInMinutes": 152,
-            "Country": "USA"
+            "id": 2,
+            "title": "The Dark Knight",
+            "poster": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+            "summary": "Batman affronte le Joker, un criminel anarchiste qui sème le chaos dans Gotham.",
+            "ratingIMDB": 9.0,
+            "releaseYear": 2008,
+            "trailer": "https://www.youtube.com/watch?v=EXeTwQWrcwY",
+            "lengthInMinutes": 152,
+            "country": "USA"
         }
     ],
     "reviews": [
         {
-            "IdReview": 1,
-            "IdMovie": 1,
-            "IdUser": 1,
+            "id": 1,
+            "idMovie": 1,
+            "idUser": 1,
             "rating": 9,
             "comment": "Un chef-d'œuvre du cinéma moderne !"
         },
         {
-            "IdReview": 2,
-            "IdMovie": 2,
-            "IdUser": 2,
+            "id": 2,
+            "idMovie": 2,
+            "idUser": 2,
             "rating": 10,
             "comment": "Le meilleur film de super-héros de tous les temps !"
         }
     ],
     "users": [
         {
-            "IdUser": 1,
-            "Username": "JohnDoe",
-            "Email": "johndoe@example.com",
+            "id": 1,
+            "username": "JohnDoe",
+            "email": "johndoe@example.com",
             "password": "john123"
         },
         {
-            "IdUser": 2,
-            "Username": "JaneDoe",
-            "Email": "janedoe@example.com",
+            "id": 2,
+            "username": "JaneDoe",
+            "email": "janedoe@example.com",
             "password": "jane123"
         }
     ],
     "actors": [
         {
-            "IdActor": 1,
-            "Lastname": "DiCaprio",
-            "Firstname": "Leonardo",
-            "Birthdate": "1974-11-11"
+            "id": 1,
+            "lastname": "DiCaprio",
+            "firstname": "Leonardo",
+            "birthdate": "1974-11-11"
         },
         {
-            "IdActor": 2,
-            "Lastname": "Ledger",
-            "Firstname": "Heath",
-            "Birthdate": "1979-04-04"
+            "id": 2,
+            "lastname": "Ledger",
+            "firstname": "Heath",
+            "birthdate": "1979-04-04"
         },
         {
-            "IdActor": 3,
-            "Lastname": "Bale",
-            "Firstname": "Christian",
-            "Birthdate": "1974-01-30"
+            "id": 3,
+            "lastname": "Bale",
+            "firstname": "Christian",
+            "birthdate": "1974-01-30"
         }
     ],
     "directors": [
         {
-            "IdDirector": 1,
-            "Lastname": "Nolan",
-            "Firstname": "Christopher",
-            "Birthdate": "1970-07-30"
+            "id": 1,
+            "lastname": "Nolan",
+            "firstname": "Christopher",
+            "birthdate": "1970-07-30"
         }
     ],
     "genres": [
         {
-            "IdGenre": 1,
+            "id": 1,
             "name": "Science-Fiction"
         },
         {
-            "IdGenre": 2,
+            "id": 2,
             "name": "Action"
         },
         {
-            "IdGenre": 3,
+            "id": 3,
             "name": "Drame"
         }
     ],
     "Userlists": [
         {
-            "IdUserMovieList": 1,
-            "Name": "Mes Films Préférés",
-            "CreateDate": "2024-02-26",
-            "IdUser": 1
+            "id": 1,
+            "name": "Mes Films Préférés",
+            "createDate": "2024-02-26",
+            "idUser": 1
         },
         {
-            "IdUserMovieList": 2,
-            "Name": "À Regarder",
-            "CreateDate": "2024-02-27",
-            "IdUser": 2
+            "id": 2,
+            "name": "À Regarder",
+            "createDate": "2024-02-27",
+            "idUser": 2
         }
     ],
     "movieActors": [
         {
-            "IdMovie": 1,
-            "IdActor": 1
+            "idMovie": 1,
+            "idActor": 1
         },
         {
-            "IdMovie": 2,
-            "IdActor": 2
+            "idMovie": 2,
+            "idActor": 2
         },
         {
-            "IdMovie": 2,
-            "IdActor": 3
+            "idMovie": 2,
+            "idActor": 3
         }
     ],
     "movieGenre": [
         {
-            "IdMovie": 1,
-            "IdGenre": 1
+            "idMovie": 1,
+            "idGenre": 1
         },
         {
-            "IdMovie": 2,
-            "IdGenre": 2
+            "idMovie": 2,
+            "idGenre": 2
         },
         {
-            "IdMovie": 2,
-            "IdGenre": 3
+            "idMovie": 2,
+            "idGenre": 3
         }
     ],
     "movieDirector": [
         {
-            "IdMovie": 1,
-            "IdDirector": 1
+            "idMovie": 1,
+            "idDirector": 1
         },
         {
-            "IdMovie": 2,
-            "IdDirector": 1
+            "idMovie": 2,
+            "idDirector": 1
         }
     ]
 }

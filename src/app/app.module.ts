@@ -8,6 +8,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { LoginComponent } from './components/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MoviesComponent } from './components/movies/movies.component';
+import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { MoviesComponent } from './components/movies/movies.component';
     NavBarComponent,
     LoginComponent,
     MoviesComponent,
+    MovieDetailsComponent,
 
   ],
   imports: [
