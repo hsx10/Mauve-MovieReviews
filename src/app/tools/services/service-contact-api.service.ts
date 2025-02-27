@@ -14,7 +14,7 @@ import { MovieDirector } from '../../models/moviedirector.model';
 @Injectable({
   providedIn: 'root'
 })
-export class ServieContactAPIService {
+export class ServiceContactAPIService {
   private url : string = "http://localhost:3000"
 
   constructor( private _httpClient : HttpClient) { }
