@@ -1,4 +1,4 @@
 export interface MovieActor {
-    IdMovie: number,
-    IdActor: number
+    idMovie: number,
+    idActor: number
 }

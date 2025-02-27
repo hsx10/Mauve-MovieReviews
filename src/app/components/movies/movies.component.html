@@ -1,11 +1,16 @@
 <h1>Movies</h1>
 
+@if(messageError){
+    <p class="movies-error">{{messageError}}</p>
+}
+
+
 <div class="movies-container">
     @for(movie of movies; track $index){
-        <button class="btn-movie" (click)="goToMovieDetails(movie.IdMovie)">
+        <button class="btn-movie" (click)="goToMovieDetails(movie.id)">
             <div class="movie-container">
-                <img [src]="movie.Poster" [alt]="movie.Title">
-                <p>{{movie.Title}}</p>
+                <img [src]="movie.poster" [alt]="movie.title">
+                <p>{{movie.title}}</p>
             </div>
         </button>
     }

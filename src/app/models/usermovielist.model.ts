@@ -1,6 +1,6 @@
 export interface UserMovieList {
-    IdUserMovieList: number,
-    Name: string,
-    CreateDate: Date,
-    IdUser: number
+    id: number,
+    name: string,
+    createDate: Date,
+    idUser: number
 }

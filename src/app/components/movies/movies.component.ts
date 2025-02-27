@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class MoviesComponent {
 
   movies: Movie[] = [];
-  messageErreur = "";
+  messageError: string = "";
 
   constructor(private _serviceContactApi: ServiceContactAPIService, private _router: Router) {
 
@@ -25,7 +25,7 @@ export class MoviesComponent {
         this.movies = data;
       },
       error: (error) => {
-        this.messageErreur = error.message;
+        this.messageError = error.message;
       },
       complete: () => {
         console.log("Récupération des films terminée.");
@@ -37,7 +37,7 @@ export class MoviesComponent {
     if (idMovie) {
       //Envoyer l'utilisateur sur la page de détails du film
       console.log(idMovie);
-      //this._router.navigate(["movie-details", idMovie]);
+      this._router.navigate(["movie-details", idMovie]);
     }
   }
 }

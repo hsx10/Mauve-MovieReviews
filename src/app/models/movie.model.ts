@@ -1,12 +1,12 @@
 export interface Movie {
-    IdMovie: number,
-    Title: string,
-    Poster: string,
-    Summary: string,
-    RatingIMDB: number,
-    ReleaseYear: number,
-    Trailer: string,
-    LengthInMinutes: number,
-    Country: string
+    id: number,
+    title: string,
+    poster: string,
+    summary: string,
+    ratingIMDB: number,
+    releaseYear: number,
+    trailer: string,
+    lengthInMinutes: number,
+    country: string
 
 }

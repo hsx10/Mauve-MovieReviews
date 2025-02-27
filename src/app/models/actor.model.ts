@@ -1,6 +1,6 @@
 export interface Actor {
-    IdActor: number,
-    Lastname: string,
-    Firstname: string,
-    Birthdate: Date
+    id: number,
+    lastname: string,
+    firstname: string,
+    birthdate: Date
 }

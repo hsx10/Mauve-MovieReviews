@@ -15,12 +15,16 @@ import { MovieDirector } from '../../models/moviedirector.model';
   providedIn: 'root'
 })
 export class ServiceContactAPIService {
-  private url : string = "http://localhost:3000"
+  private url: string = "http://localhost:3000"
 
-  constructor( private _httpClient : HttpClient) { }
+  constructor(private _httpClient: HttpClient) { }
 
-  getMovies() : Observable<Movie[]> {
+  getMovies(): Observable<Movie[]> {
     return this._httpClient.get<Movie[]>(`${this.url}/movies`)
+  }
+
+  getMovieById(id: number): Observable<Movie> {
+    return this._httpClient.get<Movie>(`${this.url}/movies/${id}`)
   }
 
   // il manque le model
@@ -28,35 +32,35 @@ export class ServiceContactAPIService {
   //   return this._httpClient.get<Movie[]>(`${this.url}/reviews`)
   // }
 
-  getUsers() : Observable<User[]> {
+  getUsers(): Observable<User[]> {
     return this._httpClient.get<User[]>(`${this.url}/users`)
   }
 
-  getActors() : Observable<Actor[]> {
+  getActors(): Observable<Actor[]> {
     return this._httpClient.get<Actor[]>(`${this.url}/actors`)
   }
 
-  getDirectors() : Observable<Director[]> {
+  getDirectors(): Observable<Director[]> {
     return this._httpClient.get<Director[]>(`${this.url}/directors`)
   }
 
-  getGenres() : Observable<Genre[]> {
+  getGenres(): Observable<Genre[]> {
     return this._httpClient.get<Genre[]>(`${this.url}/genres`)
   }
 
-  getUserLists() : Observable<UserMovieList[]> {
+  getUserLists(): Observable<UserMovieList[]> {
     return this._httpClient.get<UserMovieList[]>(`${this.url}/Userlists`)
   }
 
-  getmovieActors() : Observable<MovieActor[]> {
+  getmovieActors(): Observable<MovieActor[]> {
     return this._httpClient.get<MovieActor[]>(`${this.url}/movieActors`)
   }
 
-  getmovieGenre() : Observable<MovieGenre[]> {
+  getmovieGenre(): Observable<MovieGenre[]> {
     return this._httpClient.get<MovieGenre[]>(`${this.url}/movieGenre`)
   }
-  
-  getmovieDirector() : Observable<MovieDirector[]> {
+
+  getmovieDirector(): Observable<MovieDirector[]> {
     return this._httpClient.get<MovieDirector[]>(`${this.url}/movieDirector`)
   }
 }

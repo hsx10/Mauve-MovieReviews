@@ -1,0 +1,27 @@
+
+@if(messageError){
+    <p class="movie-error">{{messageError}}</p>
+}
+
+@if(movie){
+    <div class="movie-details-container">
+        <div class="movie-card">
+            <h1>{{movie.title}}</h1>
+            <div class="movie-card-body">
+                <img [src]="movie.poster" [alt]="movie.title">
+                <p>{{movie.summary}}</p>
+                <p>{{movie.ratingIMDB}}</p>
+                <p>{{movie.releaseYear}}</p>
+                <p>{{movie.trailer}}</p>
+                <p>{{movie.lengthInMinutes}}</p>
+                <p>{{movie.country}}</p>
+
+            </div>
+        </div>
+    </div>
+}
+
+
+
+
+

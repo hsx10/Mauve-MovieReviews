@@ -1,4 +1,4 @@
 export interface MovieDirector {
-    IdMovie: number,
-    IdDirector: number
+    idMovie: number,
+    idDirector: number
 }

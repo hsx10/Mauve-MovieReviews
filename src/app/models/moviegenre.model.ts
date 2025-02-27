@@ -1,4 +1,4 @@
 export interface MovieGenre {
-    IdMovie: number,
-    IdGenre: number
+    idMovie: number,
+    idGenre: number
 }
